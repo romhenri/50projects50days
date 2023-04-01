@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *, h1, h2, h3 {
-  font-family: 'Muli', Arial, Helvetica, sans-serif !important;
+  font-family: 'Muli', Arial, Helvetica, sans-serif;
   font-weight: 400;
 
 
@@ -10,9 +10,13 @@
   --c3: #10C672
 }
 
+body {
+  background-color: #fff;
+}
+
 input[type=button] {
-  height: 50px;
-  padding: 0px 20px;
+  min-width: 80px;
+  height: 35px;
   background-color: var(--c1);
   color: #fff;
   transition: 0.3s;
@@ -33,4 +37,29 @@ input[type=button]:active {
 
 .m {
   margin: auto
+}
+
+.btn-b {
+  background-color: #fff !important;
+  color: var(--c1) !important;
+  border: 2px solid var(--c1) !important;
+}
+
+/*: Footer */
+
+footer {
+  margin: auto;
+}
+
+footer, footer a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
 }
