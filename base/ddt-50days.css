@@ -3,4 +3,34 @@
 *, h1, h2, h3 {
   font-family: 'Muli', Arial, Helvetica, sans-serif !important;
   font-weight: 400;
+
+
+  --c1: #00875F;
+  --c2: #007352;
+  --c3: #10C672
+}
+
+input[type=button] {
+  height: 50px;
+  padding: 0px 20px;
+  background-color: var(--c1);
+  color: #fff;
+  transition: 0.3s;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  filter: brightness(90%);
+  scale: 105%;
+}
+
+input[type=button]:active {
+  filter: brightness(70%);
+  scale: 90%;
+}
+
+.m {
+  margin: auto
 }

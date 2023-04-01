@@ -1,5 +1,6 @@
 body {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
   margin: auto;
@@ -11,6 +12,7 @@ body {
   flex-direction: row;
   width: 90vw;
   margin: auto;
+  margin-bottom: 0px;
 }
 
 .panel {
@@ -73,5 +75,5 @@ body {
 
 .active h3 {
   opacity: 1;
-  transition: opacity 0.8s ease-in;
+  transition: opacity 0.8s ease-in 0.3;
 }
