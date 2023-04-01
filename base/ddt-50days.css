@@ -2,8 +2,5 @@
 
 *, h1, h2, h3 {
   font-family: 'Muli', Arial, Helvetica, sans-serif !important;
-}
-
-body {
-  background-color: black;
+  font-weight: 400;
 }
