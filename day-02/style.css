@@ -24,11 +24,9 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
-  margin-bottom: 30px;
   max-width: 100%;
   width: 350px;
-  margin: auto;
-  margin-bottom: 20px;
+  margin: 30px auto
 }
 
 .progress-container::before {
@@ -50,7 +48,7 @@ section {
   top: 50%;
   left: 0;
   height: 4px;
-  width: 50%;
+  width: 0%;
   transform: translateY(-50%);
   z-index: 1;
   transition: 0.4s ease;
@@ -65,10 +63,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--line-border-empty);
+  border: 3px solid var(--line-border-empty);
   transition: .4s ease;
   z-index: 2;
 
+}
+
+.circle.active {
+  border: 3px solid #00875F;
+  transition: 0.3s ease 0.1s;
 }
 
 button {
@@ -92,8 +95,20 @@ button:active {
   scale: 90%;
 }
 
-.btn-b {
+/* .btn-b {
   background-color: #fff !important;
   color: var(--c1) !important;
   border: 2px solid var(--c1) !important;
+} */
+
+.button:disabled {
+  background-color: rgb(201, 201, 201) !important;
+  color: #fff !important;
+  border: none !important;
+  cursor: default;
+}
+
+.button:disabled:hover, .button:disabled:active {
+  scale: 100%;
+  filter: brightness(100%)
 }

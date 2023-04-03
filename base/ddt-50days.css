@@ -40,7 +40,7 @@ input[type=button]:active {
 }
 
 .btn-b {
-  background-color: #fff !important;
+  background-color: #fff;
   color: var(--c1) !important;
   border: 2px solid var(--c1) !important;
 }
