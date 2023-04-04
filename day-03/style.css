@@ -3,8 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: var(--c1);
 }
 
@@ -27,7 +26,7 @@ li:hover {
 }
 
 .container {
-  padding: 100px 100px;
+  padding: 50px 400px;
   /* width: 100vw; */
   display: block;
   position: absolute;
@@ -37,6 +36,13 @@ li:hover {
   transition: transform 0.5s linear;
   min-height: 120vh;
   transform-origin: top left;
+  z-index: 2;
+}
+
+@media (max-width:1000px) {
+  .container {
+    padding: 50px 80px;
+  }
 }
 
 .container.show-nav {
@@ -46,12 +52,15 @@ li:hover {
 
 nav {
   color: #fff;
+  position: relative;
+  top: 400px;
 }
 
 .circle-container {
   position: fixed;
   top: -75px;
   left: -75px;
+  z-index: 3;
 }
 
 .circle {
@@ -84,4 +93,36 @@ nav {
 
 .hidden {
   display: none;
+}
+
+footer {
+  position: fixed;
+  color: #fff;
+  bottom: 15px;
+  left: 20px;
+  z-index: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover, footer:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+p {
+  margin-top: 0px !important;
+  line-height: 30px;
+  text-indent: 30px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.amsterda {
+  margin: 10px 0px;
+  object-fit: cover;
 }
