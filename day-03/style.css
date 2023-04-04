@@ -32,7 +32,7 @@ li:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: azure;
+  background-color: #fff;
   transition: transform 0.5s linear;
   min-height: 120vh;
   transform-origin: top left;
@@ -65,7 +65,7 @@ nav {
 
 .circle {
   border: 6px solid var(--c2);
-  background-color: azure;
+  background-color: #fff;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -126,3 +126,5 @@ h1 {
   margin: 10px 0px;
   object-fit: cover;
 }
+
+/* Azure combina com essa paleta */

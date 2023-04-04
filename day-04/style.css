@@ -1,0 +1,52 @@
+body {
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+input[type=text] {
+  width: 200px;
+  height: 31px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: width 0.3s ease;
+  padding: 0px 10px;
+  border: 2px solid #00000063;
+  z-index: 3;
+}
+
+.input.hidden {
+  position: relative;
+  left: 50px;
+  width: 0px !important;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn {
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.btn:focus, input:focus {
+  outline: 2px solid var(--c1);
+  border: none
+}
+
+.btn:hover {
+  filter: brightness(90%);
+  scale: 105%;
+}
+
+.btn:active {
+  filter: brightness(70%);
+  scale: 90%;
+}
