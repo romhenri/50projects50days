@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+section {
+  width: 100vw;
+  height: 100vw;
+  overflow: hidden;
+}
+
+.bg {
+  background-image: url(picture.jpg);
+  background-size: cover;
+  width: 140vw;
+  height: 110vh;
+  filter: blur(100px);
+  z-index: -1;
+  overflow: hidden;
+  position: relative;
+  /* top: -10vh; */
+}
+
+.loading-text {
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Lato';
+  position: absolute;
+}
