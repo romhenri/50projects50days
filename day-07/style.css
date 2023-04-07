@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #333
+}
+
+.container-text {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.container-btn {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.9s;
+}
+
+.split.left {
+  left: 0;
+  background: url('ps.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.split.right {
+  left: 50%;
+  background: url('xbox.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.split.left::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 172, 0.61);
+}
+
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 172, 52, 0.404);
+}
+
+h1 {
+
+  left: 25%;
+  color: #fff;
+
+  font-size: 4rem;
+  white-space: nowrap;
+  filter: drop-shadow(1px 2px 5px #00000075);
+}
+
+.btn {
+  width: 120px;
+  height: 50px;
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+
+}
+
+.btn:hover {
+  scale: 105%;
+  backdrop-filter: brightness(90%);
+}
+
+.btn:active {
+  scale: 90%;
+  backdrop-filter: brightness(70%);
+}
+
+
+@media (max-width:1000px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.hover-left .left {
+  width: 75vw;
+}
+
+.hover-left .split.right {
+  width: 25vw;
+  left: 75%;
+}
+
+.hover-right .right {
+  width: 75vw;
+  left: 25%;
+}
+
+.hover-right .split.left {
+  width: 25vw;
+}
+
+.safe-box {
+  width: 150px;
+  height: 100%;
+  /* background-color: tomato; */
+  position: fixed;
+  bottom: 0px;
+}
