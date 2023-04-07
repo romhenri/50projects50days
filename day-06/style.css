@@ -36,7 +36,7 @@ h1 {
   margin: 15px;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
   transform: translateX(500%);
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 .box:nth-of-type(even) {
