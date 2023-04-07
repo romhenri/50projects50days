@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+}
+
+body {
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+section {
+  text-align: center;
+}
+
+div {
+  text-align: center;
+
+}
+
+h1 {
+  margin: 50px 0px;
+}
+
+.box {
+  background-color: var(--c1);
+  color: aliceblue;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: 15px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(500%);
+  transition: all 0.3s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-500%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
