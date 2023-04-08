@@ -87,6 +87,7 @@ h1 {
   font-size: 4rem;
   white-space: nowrap;
   filter: drop-shadow(1px 2px 5px #00000075);
+  transition: all 0.3s;
 }
 
 .btn {
@@ -99,7 +100,7 @@ h1 {
   text-decoration: none;
   color: #fff;
   transition: 0.3s;
-
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -143,4 +144,43 @@ h1 {
   /* background-color: tomato; */
   position: fixed;
   bottom: 0px;
+}
+
+@media (max-width:500px) {
+  .safe-box {
+    width: 50px;
+  }
+
+  .hover-left .split.right h1, .hover-left .split.right a {
+    display: none;
+  }
+
+  .hover-right .split.left h1, .hover-right .split.left a {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  .split.left {
+    background-position: -550px;
+
+  }
+
+  .split.right {
+    background-position: -250px;
+  }
+
+  .hover-right .split.right {
+    background-position: -200px;
+  }
+
+  .hover-left .split.left {
+    background-position: -500px;
+  }
 }
