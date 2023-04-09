@@ -25,12 +25,12 @@ input[type=button], button {
   cursor: pointer;
 }
 
-input[type=button]:hover {
+input[type=button]:hover, .btn:hover {
   filter: brightness(90%);
   scale: 105%;
 }
 
-input[type=button]:active {
+input[type=button]:active, .btn:active {
   filter: brightness(70%);
   scale: 90%;
 }
