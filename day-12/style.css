@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*, h1, h2, h3 {
+	font-family: 'Muli', Arial, Helvetica, sans-serif;
+	font-weight: 400;
+
+
+	--c1: #00875F;
+	--c2: #007352;
+	--c3: #10C672;
+
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.container-title h1 {
+	text-align: center !important;
+}
+
+.container-title {
+	width: 100%;
+}
+
+body {
+	font-family: "Lato";
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #dddddd;
+}
+
+.container {
+	display: flex;
+	gap: 30px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: auto;
+	padding: 30px;
+	border-radius: 15px;
+
+	flex-wrap: wrap;
+
+	min-width: 600px;
+	transition: .3s ease;
+}
+
+.faq-container {
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin: auto;
+	min-width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100px;
+	position: relative;
+	transition: .3s ease;
+}
+
+.faq-container .active {
+	background-color: #fff !important;
+	height: 100%;
+	transition: .3s ease;
+}
+
+.faq {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	position: relative;
+	background-color: transparent;
+	transition: .3s ease;
+	padding: 0px 30px 0px 20px;
+	border-radius: 10px;
+}
+
+.faq-container {
+	background-color: #dddddd;
+	transition: .3s ease;
+}
+
+.faq-text {
+	display: none;
+	transition: .3s ease;
+}
+
+.active .faq-text {
+	display: block;
+}
+
+.faq-toggle {
+	position: absolute;
+	/* top: 0px; */
+	right: 20px;
+	outline: 0;
+	border: 0;
+	width: 40px;
+	height: 40px;
+
+	background-color: #dddddd;
+	cursor: pointer;
+	transition: .3s ease;
+	border-radius: 50%;
+}
+
+.active .faq-toggle {
+	background-color: #b6b6b6;
+	border-radius: 50%;
+	transition: .3s ease;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+}
+
+i {
+	font-size: 14px;
+	color: #000;
+}
+
+/* .faq.active::before, .faq.active::after {
+	content: '\f075';
+	font-family: 'Font Awesome 5 Free';
+	color: var(--c1);
+	position: absolute;
+	opacity: 0.2;
+	font-size: 7rem;
+} */
+
+.fa-times {
+	display: none;
+}
+
+.active .fa-times {
+	display: block;
+	color: #fff;
+}
+
+.active .fa-chevron-down {
+	display: none;
+}
+
+.active .faq-container {}
