@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/> -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							clifford: "#000",
+						},
+					},
+				},
+			};
+		</script>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Movie App</title>
+	</head>
+	<!--: BODY -->
+	<body class="m-0 bg-indigo-950 text-white">
+		<header
+			class="flex p-5 bg-indigo-900 justify-between align-center items-center px-10 xl:px-60"
+		>
+			<div class="flex gap-12 items-center">
+				<a href="" class="logoname text-lg">MovieHub</a>
+
+				<ul class="flex gap-4">
+					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+						<button>Action</button>
+					</li>
+					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+						<button>Adventure</button>
+					</li>
+					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+						<button>Animation</button>
+					</li>
+					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+						<button>Superheroes</button>
+					</li>
+				</ul>
+			</div>
+			<form id="form">
+				<!-- <i class="fas fa-search"></i> -->
+				<input
+					type="text"
+					id="search"
+					placeholder="search..."
+					class="rounded bg-transparent border-al px-2 py-1 outline-white outline-0"
+				/>
+				<button
+					class="border-[0.5px] rounded p-[4px] border-al hover:bg-indigo-700"
+				>
+					Search
+				</button>
+			</form>
+		</header>
+
+		<!--: MAIN -->
+
+		<main
+			id="main"
+			class="main flex p-4 flex-wrap justify-center gap-5 lg:max-w-[76%] mx-auto border-indigo-900 border-[0.5px] pt-10"
+		>
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<div
+				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<div class="relative">
+					<div class="loading bg-gray-500"></div>
+				</div>
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Loading...</h3>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div>
+
+			<!-- hover:scale-[1.05] -->
+
+			<!-- <div
+				class="movie border-red w-72 shadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+			>
+				<img src="example.jpg" alt="" class="w-full" />
+
+				<div
+					id="movie-info"
+					class="flex px-4 py-3 justify-between text-lg shadow"
+				>
+					<h3>Movie Title</h3>
+					<span class="bg-black px-2 rounded bg-black-50 items-center"
+						>9.8</span
+					>
+				</div>
+
+				<div
+					id="overview"
+					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+				>
+					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Id placeat natus ut maxime numquam nisi. Sapiente eum
+						distinctio hic tempore sint ex vero vel facere tempora
+						aperiam.
+					</p>
+				</div>
+			</div> -->
+		</main>
+
+		<footer class="text-center p-8 border-indigo-900 border-[0.5px]">
+			<a
+				href="https://www.linkedin.com/in/romulo-henri/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="text-indigo-300 hover:underline"
+				>Desenvolvido por Rômulo Henri (2023)</a
+			>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+<!-- max-w-screen-xl -->

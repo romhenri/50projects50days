@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+
+
+* {
+  box-sizing: border-box;
+}
+
+.movie {
+  max-width: 208px;
+}
+
+.overview {
+  bottom: -220px;
+  transition: all .3s ease-out;
+  max-height: 200px;
+  max-width: 100%;
+  text-justify: distribute;
+  overflow: auto;
+}
+
+.movie:hover .overview {
+  bottom: 0;
+  transition-duration: 900ms;
+}
+
+
+main {
+  border-top: none;
+  border-bottom: none;
+}
+
+.movie-info {
+  min-height: 80px
+}
+
+.txt {
+  max-width: 80px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline;
+  overflow: hidden !important;
+}
+
+.logoname {
+  font-family: 'McLaren';
+  font-size: 22px;
+  scale: 120%;
+}
+
+/*  */
+
+.border-al {
+  border: 1px solid hsla(0, 0%, 100%, 0.500) !important;
+}
+
+.outline-0-5 {
+  outline: .1px solid #fff;
+}
+
+.bg-black-50 {
+  background-color: hsla(0, 0%, 0%, 0.200) !important;
+}
+
+img {
+  z-index: -5 !important;
+}
+
+.loading {
+  width: 208px;
+  height: 312px;
+  top: 0;
+}
+
+.loading-icon {
+
+  top: 0;
+  z-index: 5;
+}
