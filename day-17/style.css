@@ -4,7 +4,6 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 
 
@@ -93,5 +92,21 @@ img {
 
   input {
     max-width: 120px;
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  ul, li {
+    display: none;
+  }
+
+
+  input {
+    max-width: 100px;
+  }
+
+  .movie {
+    max-width: 160px;
   }
 }
