@@ -83,3 +83,15 @@ img {
   top: 0;
   z-index: 5;
 }
+
+@media screen and (max-width:900px) {
+
+  ul, li {
+    display: none;
+  }
+
+
+  input {
+    max-width: 120px;
+  }
+}
