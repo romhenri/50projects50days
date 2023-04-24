@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+  --p-color: #333;
+  --second-color: #fff;
+  --s-color: #f0f0f0;
+}
+
+body.dark {
+  --primary-color: #fff;
+  --second-color: #000;
+  --s-color: #333;
+  transition: .6s ease;
+}
+
+body.dark {
+  background-color: #111;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+h1 {
+  position: absolute;
+  top: 10vh
+}
+
+.toggle {
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  border: 0;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: .3s;
+
+  position: absolute;
+  bottom: 10vh;
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle:active {
+  scale: 90%;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: var(--s-color);
+  transition: .6s ease;
+  border-radius: 50%;
+}
+
+.needle {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 65px;
+  width: 3px;
+  transform-origin: bottom center;
+  border-radius: 10px !important;
+  transition: .6s ease;
+}
+
+.needle.hour {
+  transform: translate(-50%, -100%) rotate(35deg);
+  height: 60px;
+}
+
+.needle.minute {
+  transform: translate(-50%, -100%) rotate(90deg);
+  height: 80px;
+}
+
+.needle.second {
+  transform: translate(-50%, -100%) rotate(0deg);
+  height: 80px;
+  background-color: #e74c3c;
+}
+
+.center-point {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: .6s ease;
+}
+
+.time {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
