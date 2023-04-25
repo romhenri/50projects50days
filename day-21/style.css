@@ -20,18 +20,20 @@ body {
   margin: 10px;
   border: solid 3px black;
   background-color: #fff;
+  overflow: hidden;
+  position: relative;
 }
 
 .fill {
   background-image: url('https://picsum.photos/150');
-  height: 144px;
-  width: 144px;
+  height: 100%;
+  width: 100%;
   cursor: pointer;
-  overflow: hidden;
+  position: absolute;
 }
 
 .hold {
-  border: 5px solid #ccc;
+  /* border: 5px solid #000 */
 }
 
 .hovered {
