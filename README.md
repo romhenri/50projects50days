@@ -1,59 +1,57 @@
-# 50 Projects in 50 Days - HTML/CSS and JavaScript
+# 50 Projetos em 50 Dias
 
-This is the main repository for all of the projects in the course.
+![GitHub repo size](https://img.shields.io/github/repo-size/romhenri/50projects50days?style=for-the-badge)
 
--   [Course Link](https://www.udemy.com/course/50-projects-50-days)
--   [Course Info Website](https://50projects50days.com)
+<!-- <img src="src/img/website-1.5.png" alt="Site Gênio Numérico"> -->
 
-| day | Project                                                                                                               | Deploy                                                                            |
-| :-: | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Expanding Cards](https://github.com/romhenri/50projects50days/day-01)                                                | [Live Demo](https://50projects50days.com/projects/expanding-cards/)               |
-| 02  | [Progress Steps](https://github.com/romhenri/50projects50days/day-02)                                                 | [Live Demo](https://50projects50days.com/projects/progress-steps/)                |
-| 03  | [Rotating Navigation Animation](https://github.com/romhenri/50projects50days/day-03)                                  | [Live Demo](https://50projects50days.com/projects/rotating-navigation-animation/) |
-| 04  | [Hidden Search Widget](https://github.com/romhenri/50projects50days/tree/master/day-04)                               | [Live Demo](https://50projects50days.com/projects/hidden-search-widget/)          |
-| 05  | [Blurry Loading](https://github.com/romhenri/50projects50days/tree/master/day-05)                                     | [Live Demo](https://50projects50days.com/projects/blurry-loading/)                |
-| 06  | [Scroll Animation](https://github.com/romhenri/50projects50days/tree/master/day-06)                                   | [Live Demo](https://50projects50days.com/projects/scroll-animation/)              |
-| 07  | [Split Landing Page](https://github.com/romhenri/50projects50days/tree/master/split-landing-page)                     | [Live Demo](https://50projects50days.com/projects/split-landing-page/)            |
-| 08  | [Form Wave](https://github.com/romhenri/50projects50days/tree/master/form-input-wave)                                 | [Live Demo](https://50projects50days.com/projects/form-wave/)                     |
-| 09  | [Sound Board](https://github.com/romhenri/50projects50days/tree/master/sound-board)                                   | [Live Demo](https://50projects50days.com/projects/sound-board/)                   |
-| 10  | [Dad Jokes](https://github.com/romhenri/50projects50days/tree/master/dad-jokes)                                       | [Live Demo](https://50projects50days.com/projects/dad-jokes/)                     |
-| 11  | [Event Keycodes](https://github.com/romhenri/50projects50days/tree/master/event-keycodes)                             | [Live Demo](https://50projects50days.com/projects/event-keycodes/)                |
-| 12  | [Faq Collapse](https://github.com/romhenri/50projects50days/tree/master/faq-collapse)                                 | [Live Demo](https://50projects50days.com/projects/faq-collapse/)                  |
-| 13  | [Random Choice Picker](https://github.com/romhenri/50projects50days/tree/master/random-choice-picker)                 | [Live Demo](https://50projects50days.com/projects/random-choice-picker/)          |
-| 14  | [Animated Navigation](https://github.com/romhenri/50projects50days/tree/master/animated-navigation)                   | [Live Demo](https://50projects50days.com/projects/animated-navigation/)           |
-| 15  | [Incrementing Counter](https://github.com/romhenri/50projects50days/tree/master/incrementing-counter)                 | [Live Demo](https://50projects50days.com/projects/incrementing-counter/)          |
-| 16  | [Drink Water](https://github.com/romhenri/50projects50days/tree/master/drink-water)                                   | [Live Demo](https://50projects50days.com/projects/drink-water/)                   |
-| 17  | [Movie App](https://github.com/romhenri/50projects50days/tree/master/movie-app)                                       | [Live Demo](https://50projects50days.com/projects/movie-app/)                     |
-| 18  | [Background Slider](https://github.com/romhenri/50projects50days/day-18)                                              | [Live Demo](https://romhenri.github.io/50projects50days/day-18)                   |
-| 19  | [Theme Clock](https://github.com/romhenri/50projects50days/tree/master/theme-clock)                                   | [Live Demo](https://50projects50days.com/projects/theme-clock/)                   |
-| 20  | [Button Ripple Effect](https://github.com/romhenri/50projects50days/tree/master/button-ripple-effect)                 | [Live Demo](https://50projects50days.com/projects/button-ripple-effect/)          |
-| 21  | [Drag N Drop](https://github.com/romhenri/50projects50days/tree/master/drag-n-drop)                                   | [Live Demo](https://50projects50days.com/projects/drag-n-drop/)                   |
-| 22  | [Drawing App](https://github.com/romhenri/50projects50days/tree/master/drawing-app)                                   | [Live Demo](https://50projects50days.com/projects/drawing-app/)                   |
-| 23  | [Kinetic Loader](https://github.com/romhenri/50projects50days/tree/master/kinetic-loader)                             | [Live Demo](https://50projects50days.com/projects/kinetic-loader/)                |
-| 24  | [Content Placeholder](https://github.com/romhenri/50projects50days/tree/master/content-placeholder)                   | [Live Demo](https://50projects50days.com/projects/content-placeholder/)           |
-| 25  | [Sticky Navbar](https://github.com/romhenri/50projects50days/tree/master/sticky-navigation)                           | [Live Demo](https://50projects50days.com/projects/sticky-navbar/)                 |
-| 26  | [Double Vertical Slider](https://github.com/romhenri/50projects50days/tree/master/double-vertical-slider)             | [Live Demo](https://50projects50days.com/projects/double-vertical-slider/)        |
-| 27  | [Toast Notification](https://github.com/romhenri/50projects50days/tree/master/toast-notification)                     | [Live Demo](https://50projects50days.com/projects/toast-notification/)            |
-| 28  | [Github Profiles](https://github.com/romhenri/50projects50days/tree/master/github-profiles)                           | [Live Demo](https://50projects50days.com/projects/github-profiles/)               |
-| 29  | [Double Click Heart](https://github.com/romhenri/50projects50days/tree/master/double-click-heart)                     | [Live Demo](https://50projects50days.com/projects/double-click-heart/)            |
-| 30  | [Auto Text Effect](https://github.com/romhenri/50projects50days/tree/master/auto-text-effect)                         | [Live Demo](https://50projects50days.com/projects/auto-text-effect/)              |
-| 31  | [Password Generator](https://github.com/romhenri/50projects50days/tree/master/password-generator)                     | [Live Demo](https://50projects50days.com/projects/password-generator/)            |
-| 32  | [Good Cheap Fast](https://github.com/romhenri/50projects50days/tree/master/good-cheap-fast)                           | [Live Demo](https://50projects50days.com/projects/good-cheap-fast/)               |
-| 33  | [Notes App](https://github.com/romhenri/50projects50days/tree/master/notes-app)                                       | [Live Demo](https://50projects50days.com/projects/notes-app/)                     |
-| 34  | [Animated Countdown](https://github.com/romhenri/50projects50days/tree/master/animated-countdown)                     | [Live Demo](https://50projects50days.com/projects/animated-countdown/)            |
-| 35  | [Image Carousel](https://github.com/romhenri/50projects50days/tree/master/image-carousel)                             | [Live Demo](https://50projects50days.com/projects/image-carousel/)                |
-| 36  | [Hoverboard](https://github.com/romhenri/50projects50days/tree/master/hoverboard)                                     | [Live Demo](https://50projects50days.com/projects/hoverboard/)                    |
-| 37  | [Pokedex](https://github.com/romhenri/50projects50days/tree/master/pokedex)                                           | [Live Demo](https://50projects50days.com/projects/pokedex/)                       |
-| 38  | [Mobile Tab Navigation](https://github.com/romhenri/50projects50days/tree/master/mobile-tab-navigation)               | [Live Demo](https://50projects50days.com/projects/mobile-tab-navigation/)         |
-| 39  | [Password Strength Background](https://github.com/romhenri/50projects50days/tree/master/password-strength-background) | [Live Demo](https://50projects50days.com/projects/password-strength-background/)  |
-| 40  | [3d Background Boxes](https://github.com/romhenri/50projects50days/tree/master/3d-boxes-background)                   | [Live Demo](https://50projects50days.com/projects/3d-background-boxes/)           |
-| 41  | [Verify Account Ui](https://github.com/romhenri/50projects50days/tree/master/verify-account-ui)                       | [Live Demo](https://50projects50days.com/projects/verify-account-ui/)             |
-| 42  | [Live User Filter](https://github.com/romhenri/50projects50days/tree/master/live-user-filter)                         | [Live Demo](https://50projects50days.com/projects/live-user-filter/)              |
-| 43  | [Feedback Ui Design](https://github.com/romhenri/50projects50days/tree/master/feedback-ui-design)                     | [Live Demo](https://50projects50days.com/projects/feedback-ui-design/)            |
-| 44  | [Custom Range Slider](https://github.com/romhenri/50projects50days/tree/master/custom-range-slider)                   | [Live Demo](https://50projects50days.com/projects/custom-range-slider/)           |
-| 45  | [Netflix Mobile Navigation](https://github.com/romhenri/50projects50days/tree/master/netflix-mobile-navigation)       | [Live Demo](https://50projects50days.com/projects/netflix-mobile-navigation/)     |
-| 46  | [Quiz App](https://github.com/romhenri/50projects50days/tree/master/quiz-app)                                         | [Live Demo](https://50projects50days.com/projects/quiz-app/)                      |
-| 47  | [Testimonial Box Switcher](https://github.com/romhenri/50projects50days/tree/master/testimonial-box-switcher)         | [Live Demo](https://50projects50days.com/projects/testimonial-box-switcher/)      |
-| 48  | [Random Image Feed](https://github.com/romhenri/50projects50days/tree/master/random-image-generator)                  | [Live Demo](https://50projects50days.com/projects/random-image-feed/)             |
-| 49  | [Todo List](https://github.com/romhenri/50projects50days/tree/master/todo-list)                                       | [Live Demo](https://50projects50days.com/projects/todo-list/)                     |
-| 50  | [Insect Catch Game](https://github.com/romhenri/50projects50days/tree/master/insect-catch-game)                       | [Live Demo](https://50projects50days.com/projects/insect-catch-game/)             |
+> Curso Desafio de desenvolvimento de 50 Pequenos Projetos com HTML, CSS e JS Puros.
+
+<hr>
+
+### Linguagens e Tecnologias
+
+<div display="inline_block">
+  <a href="https://github.com/romhenri/javascript" target="_blank"><img alt="JavaScript" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></a>
+
+<a href="https://github.com/romhenri/html" target="_blank">
+  <img alt="HTML" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
+
+<a href="https://github.com/romhenri/css" target="_blank">
+  <img alt="CSS" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>
+
+<hr>
+
+### Projetos:
+
+| Dia: | Projeto:               | Publicação:                                                                              |
+| ---- | ---------------------- | ---------------------------------------------------------------------------------------- |
+| 01   | Expanding Cards        | <a href="https://romhenri.github.io/50projects50days/day-01/" target="_blank">Deploy</a> |
+| 02   | Progress Stepso        | <a href="https://romhenri.github.io/50projects50days/day-03/" target="_blank">Deploy</a> |
+| 03   | Rotating Navigation    | <a href="https://romhenri.github.io/50projects50days/day-02/" target="_blank">Deploy</a> |
+| 04   | Hidden Search Widget   | <a href="https://romhenri.github.io/50projects50days/day-05/" target="_blank">Deploy</a> |
+| 05   | Blurry Loading         | <a href="https://romhenri.github.io/50projects50days/day-04/" target="_blank">Deploy</a> |
+| 06   | Scroll Animation       | <a href="https://romhenri.github.io/50projects50days/day-06/" target="_blank">Deploy</a> |
+| 07   | Split Landing Page     | <a href="https://romhenri.github.io/50projects50days/day-07/" target="_blank">Deploy</a> |
+| 08   | Form Wave Animation    | <a href="https://romhenri.github.io/50projects50days/day-08/" target="_blank">Deploy</a> |
+| 09   | Sound Board            | <a href="https://romhenri.github.io/50projects50days/day-09/" target="_blank">Deploy</a> |
+| 10   | Dad Jokes              | <a href="https://romhenri.github.io/50projects50days/day-10/" target="_blank">Deploy</a> |
+| 11   | Event KeyCodes         | <a href="https://romhenri.github.io/50projects50days/day-11/" target="_blank">Deploy</a> |
+| 12   | FAQ Collapse           | <a href="https://romhenri.github.io/50projects50days/day-12/" target="_blank">Deploy</a> |
+| 13   | Random Choice Picker   | <a href="https://romhenri.github.io/50projects50days/day-13/" target="_blank">Deploy</a> |
+| 14   | Animated Navigation    | <a href="https://romhenri.github.io/50projects50days/day-14/" target="_blank">Deploy</a> |
+| 15   | Incrementing Counter   | <a href="https://romhenri.github.io/50projects50days/day-15/" target="_blank">Deploy</a> |
+| 16   | Drink Water            | <a href="https://romhenri.github.io/50projects50days/day-16/" target="_blank">Deploy</a> |
+| 17   | Movie App              | <a href="https://romhenri.github.io/50projects50days/day-17/" target="_blank">Deploy</a> |
+| 18   | Background Slider      | <a href="https://romhenri.github.io/50projects50days/day-18/" target="_blank">Deploy</a> |
+| 19   | Theme Clock            | <a href="https://romhenri.github.io/50projects50days/day-19/" target="_blank">Deploy</a> |
+| 20   | Button Ripple Effect   | <a href="https://romhenri.github.io/50projects50days/day-20/" target="_blank">Deploy</a> |
+| 21   | Drag N Drop            | <a href="https://romhenri.github.io/50projects50days/day-21/" target="_blank">Deploy</a> |
+| 22   | Drawing App            | <a href="https://romhenri.github.io/50projects50days/day-22/" target="_blank">Deploy</a> |
+| 23   | Kinetic Loader         | <a href="https://romhenri.github.io/50projects50days/day-23/" target="_blank">Deploy</a> |
+| 24   | Content Placeholder    | <a href="https://romhenri.github.io/50projects50days/day-24/" target="_blank">Deploy</a> |
+| 25   | Sticky Navbar          | <a href="https://romhenri.github.io/50projects50days/day-25/" target="_blank">Deploy</a> |
+| 26   | Double Vertical Slider | <a href="https://romhenri.github.io/50projects50days/day-26/" target="_blank">Deploy</a> |
+| 27   | Toast Notification     | <a href="https://romhenri.github.io/50projects50days/day-27/" target="_blank">Deploy</a> |
+| 28   | Github Profiles        | <a href="https://romhenri.github.io/50projects50days/day-28/" target="_blank">Deploy</a> |
+| 29   | Double Heart Click     | <a href="https://romhenri.github.io/50projects50days/day-29/" target="_blank">Deploy</a> |
+| 30   | Auto Text Effect       | <a href="https://romhenri.github.io/50projects50days/day-30/" target="_blank">Deploy</a> |
