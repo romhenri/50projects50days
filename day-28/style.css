@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0D1117;
+  color: #ececec;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  height: 100vh;
+  margin: 0;
+  gap: 20px;
+}
+
+.user-form {
+  background-color: #161B22;
+  border: 1px solid #646B75;
+  border-left: none;
+  border-right: none;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 15px;
+  gap: 10px;
+}
+
+.user-form input {
+  background-color: #161B22;
+  color: #fff;
+  border: 1px solid #646B75;
+
+  display: block;
+
+  width: 80%;
+  border-radius: 10px;
+  padding: .8rem;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  background-color: #161B22;
+  border: 1px solid #646B75;
+
+  display: flex;
+
+  max-width: 800px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.avatar {
+  border: 3px solid #646B75;
+
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user-info {
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+  padding: 0;
+  width: 80%;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+}
+
+.repos {
+  display: flex;
+  justify-content: start;
+}
+
+.repo, .repo a {
+  background-color: #21262D;
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 0.7rem;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}

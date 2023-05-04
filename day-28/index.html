@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Github Profiles</title>
+	</head>
+	<body>
+		<form id="form" class="user-form">
+			<img width="50px" src="icons8-github.svg" alt="" />
+			<input id="search" type="text" placeholder="Search a Github User" />
+		</form>
+
+		<main id="main">
+			<div class="card">
+				<div>
+					<img
+						class="avatar"
+						src="https://randomuser.me/api/portraits/men/30.jpg"
+						alt="User Profile Image"
+					/>
+				</div>
+				<div class="user-info">
+					<h2>johndoe</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Hic ut corrupti voluptatum iure. Suscipit, sed.
+					</p>
+
+					<ul>
+						<li>300 <strong>Followers</strong></li>
+						<li>100 <strong>Following</strong></li>
+						<li>30 <strong>Repos</strong></li>
+					</ul>
+
+					<div id="repos">
+						<a href="#" class="repo">Repo 1</a>
+						<a href="#" class="repo">Repo 1</a>
+						<a href="#" class="repo">Repo 1</a>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Scripts -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+			integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="script.js"></script>
+	</body>
+</html>
