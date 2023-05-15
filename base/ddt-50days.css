@@ -25,16 +25,6 @@ input[type=button], button {
   cursor: pointer;
 }
 
-input[type=button]:hover, .btn:hover {
-  filter: brightness(90%);
-  scale: 105%;
-}
-
-input[type=button]:active, .btn:active {
-  filter: brightness(70%);
-  scale: 90%;
-}
-
 .m {
   margin: auto
 }
@@ -43,23 +33,4 @@ input[type=button]:active, .btn:active {
   background-color: #fff !important;
   color: var(--c1) !important;
   border: 2px solid var(--c1) !important;
-}
-
-/*: Footer */
-
-footer {
-  margin: auto;
-}
-
-footer, footer a {
-  color: rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-  transition: 0.3s;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-  font-size: 12px;
-}
-
-footer a:hover {
-  color: rgba(0, 0, 0, 0.8);
-  text-decoration: underline;
 }
