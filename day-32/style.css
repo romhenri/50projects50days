@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  --c1: #00875F;
+  --c2: #007352;
+  --c3: #10C672
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+section {
+  padding: 20px 30px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+check-system {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  margin-bottom: 20px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 10px 20%;
+  width: 100%;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  background-color: #d0d0d0;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 0 15px 0;
+  box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle:checked+.label {
+  background-color: var(--c1);
+}
+
+.ball {
+  background-color: #fff;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked+.label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(40px) scale(1.0);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
