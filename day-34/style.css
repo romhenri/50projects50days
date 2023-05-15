@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box;
+
+  --c1: #00875F;
+  --c2: #007352;
+  --c3: #10C672
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.counter {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide .2s;
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.final {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.final.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: show 0.2s ease-out;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.nums {
+  color: var(--c2);
+  font-size: 50px;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
+}
+
+.nums span {
+  position: absolute;
+  transform-origin: bottom center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn .5s ease-in-out;
+}
+
+.nums span.out {
+  animation: goOut 0.5s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes goOut {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+
+#replay {
+  background-color: var(--c1);
+  border-radius: 3px;
+  border: none;
+  color: aliceblue;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#replay span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+#replay span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#replay:hover span {
+  padding-right: 25px;
+}
+
+#replay:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Button */
+
+input[type=button]:hover, .btn:hover {
+  filter: brightness(90%);
+  scale: 105%;
+}
+
+input[type=button]:active, .btn:active {
+  filter: brightness(70%);
+  scale: 90%;
+}
+
+/*: Footer */
+
+footer {
+  margin: auto;
+}
+
+footer, footer a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}

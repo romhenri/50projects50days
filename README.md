@@ -65,3 +65,13 @@
 | 38   | Mobile Tab Navigation        | <a href="https://romhenri.github.io/50projects50days/day-38/" target="_blank">Deploy</a> |
 | 39   | Password Strength Background | <a href="https://romhenri.github.io/50projects50days/day-39/" target="_blank">Deploy</a> |
 | 40   | 3D Background Boxes          | <a href="https://romhenri.github.io/50projects50days/day-40/" target="_blank">Deploy</a> |
+| 41   | Verify Account UI            | <a href="https://romhenri.github.io/50projects50days/day-41/" target="_blank">Deploy</a> |
+| 42   | Live User Filter             | <a href="https://romhenri.github.io/50projects50days/day-42/" target="_blank">Deploy</a> |
+| 43   | Feedback UI Design           | <a href="https://romhenri.github.io/50projects50days/day-43/" target="_blank">Deploy</a> |
+| 44   | Custom Range Slider          | <a href="https://romhenri.github.io/50projects50days/day-44/" target="_blank">Deploy</a> |
+| 45   | Netflix Navigation           | <a href="https://romhenri.github.io/50projects50days/day-45/" target="_blank">Deploy</a> |
+| 46   | QuizApp                      | <a href="https://romhenri.github.io/50projects50days/day-46/" target="_blank">Deploy</a> |
+| 47   | Testimonial Box Switcher     | <a href="https://romhenri.github.io/50projects50days/day-47/" target="_blank">Deploy</a> |
+| 48   | Random Image Feed            | <a href="https://romhenri.github.io/50projects50days/day-48/" target="_blank">Deploy</a> |
+| 49   | Todo List                    | <a href="https://romhenri.github.io/50projects50days/day-49/" target="_blank">Deploy</a> |
+| 50   | Insect Catch Game            | <a href="https://romhenri.github.io/50projects50days/day-50/" target="_blank">Deploy</a> |
