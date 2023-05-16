@@ -34,12 +34,14 @@ function resetInterval() {
 
 rightBtn.addEventListener("click", () => {
 	idx++;
+	updateStep(idx);
 	changeImage();
 	resetInterval();
 });
 
 leftBtn.addEventListener("click", () => {
 	idx--;
+	updateStep(idx);
 	changeImage();
 	resetInterval();
 	("");
