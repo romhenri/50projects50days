@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box;
+
+  --c1: #00875F;
+  --c2: #007352;
+  --c3: #10C672
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.phone {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #eee;
+  border-radius: 15px;
+  height: 600px;
+  width: 340px;
+}
+
+.phone .content {
+  opacity: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 60px);
+  width: 100%;
+  transition: opacity 0.4s ease;
+}
+
+.phone .content.show {
+  opacity: 1;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+  width: 100%;
+}
+
+nav ul {
+  background-color: #fff;
+  display: flex;
+  list-style-type: none;
+  padding: 5px 0 5px 0;
+  margin: 0;
+  height: 60px;
+}
+
+nav li {
+  color: #777;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul li p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+nav ul li:hover,
+nav ul li.active {
+  color: var(--c1);
+}
+
+/* #8e44ad */
+
+.barStatus {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  margin: auto;
+  bottom: 55px;
+  gap: 8px;
+  left: 0px;
+}
+
+.barStatus .step {
+  background-color: #92929275;
+  width: 78px;
+  height: 3px;
+  transition: .3s ease;
+  /* border-radius: 50%; */
+}
+
+/* Button */
+
+input[type=button]:hover, .btn:hover {
+  filter: brightness(90%);
+  scale: 105%;
+}
+
+input[type=button]:active, .btn:active {
+  filter: brightness(70%);
+  scale: 90%;
+}
+
+/*: Footer */
+
+footer {
+  margin: auto;
+}
+
+footer, footer a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}
