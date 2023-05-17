@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+  box-sizing: border-box;
+
+  --c1: #00875F;
+  --c2: #007352;
+  --c3: #10C672
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.magic {
+  background-color: #373370;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10%;
+  letter-spacing: 1px;
+  box-shadow: 0 3px rgba(55, 51, 112, 0.692);
+  z-index: 100;
+}
+
+.magic:focus {
+  outline: none;
+}
+
+.magic:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  transition: 0.4s ease;
+}
+
+.boxes.big {
+  width: 600px;
+  height: 600px;
+}
+
+.boxes.big .box {
+  transform: rotateZ(360deg);
+}
+
+.box {
+  background-image: url('https://media2.giphy.com/media/a5viI92PAF89q/giphy.gif?cid=ecf05e47u9qfdqj18svxqqgak239q6pti75n8jcqvcgeakt3&ep=v1_gifs_search&rid=giphy.gif&ct=g');
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  position: relative;
+  height: 125px;
+  width: 125px;
+  transition: 0.4s ease;
+}
+
+.box::after {
+  content: '';
+  background-color: #4b54a3;
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  transform: skewY(45deg);
+}
+
+.box::before {
+  content: '';
+  background-color: #373370;
+  position: absolute;
+  bottom: -15px;
+  left: 8px;
+  height: 15px;
+  width: 100%;
+  transform: skewX(45deg);
+}
+
+/* Button */
+
+input[type=button]:hover, .btn:hover {
+  filter: brightness(90%);
+  scale: 105%;
+}
+
+input[type=button]:active, .btn:active {
+  filter: brightness(70%);
+  scale: 90%;
+}
+
+/*: Footer */
+
+footer {
+  margin: auto;
+}
+
+footer, footer a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: underline;
+}
