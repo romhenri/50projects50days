@@ -4,7 +4,7 @@
 
 <!-- <img src="src/img/website-1.5.png" alt="Site Gênio Numérico"> -->
 
-> Curso Desafio de desenvolvimento de 50 Pequenos Projetos com HTML, CSS e JS Puros.
+> Curso Desafio de desenvolvimento de 50 Pequenos Projetos com HTML, CSS e JS, tendo 2 projetos usando Tailwind CSS.
 
 <hr>
 
@@ -18,6 +18,8 @@
 
 <a href="https://github.com/romhenri/css" target="_blank">
   <img alt="CSS" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></a>
+
+<a href="https://github.com/romhenri/css/tree/main/tailwindcss" target="_blank"><img alt="Tailwind CSS" height="54" width="72" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"/></a>
 
 <hr>
 
