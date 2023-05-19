@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+	box-sizing: border-box;
+
+	--c1: #00875f;
+	--c2: #007352;
+	--c3: #10c672;
+}
+
+body {
+	accent-color: var(--c1);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.quiz-container {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+	width: 600px;
+	overflow: hidden;
+}
+
+.quiz-header {
+	padding: 4rem;
+}
+
+h2 {
+	padding: 1rem;
+	text-align: center;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+ul li label {
+	cursor: pointer;
+}
+
+button {
+	background-color: var(--c1);
+	color: #fff;
+	border: none;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	font-size: 1.1rem;
+	font-family: inherit;
+	padding: 1.3rem;
+}
+
+button:hover {
+	background-color: var(--c2);
+}
+
+button:active {
+	background-color: var(--c2);
+	filter: brightness(90%);
+}
+
+button:focus {
+	outline: none;
+	background-color: var(--c2);
+}
+
+input[type='radio'] {
+	scale: 200%;
+	margin-right: 20px;
+	border: 2px solid var(--c1);
+	cursor: pointer;
+}
+
+input[type='radio']:checked + label span {
+	background-color: var(--c1);
+	color: var(--c1);
+}
+
+/* Button */
+
+input[type='button']:hover,
+.btn:hover {
+	filter: brightness(90%);
+	scale: 105%;
+}
+
+input[type='button']:active,
+.btn:active {
+	filter: brightness(70%);
+	scale: 90%;
+}
+
+/*: Footer */
+
+footer {
+	margin: auto;
+}
+
+footer,
+footer a {
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	font-size: 12px;
+}
+
+footer a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: underline;
+}
