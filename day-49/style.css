@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+	box-sizing: border-box;
+
+	--c1: #00875f;
+	--c2: #007352;
+	--c3: #10c672;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+h1 {
+	color: var(--c1);
+	font-size: 10rem;
+	text-align: center;
+	opacity: 0.4;
+}
+
+form {
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	width: 400px;
+}
+
+.input {
+	border: none;
+	color: #444;
+	font-size: 2rem;
+	padding: 1rem 2rem;
+	display: block;
+	width: 100%;
+	outline: 2px solid var(--c1);
+	border-radius: 10px;
+}
+
+.input::placeholder {
+	color: #d5d5d5;
+}
+
+.input:focus {
+	outline-color: var(--c1);
+}
+
+.todos {
+	background-color: #fff;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	color: #444;
+}
+
+.todos li {
+	border-top: 1px solid #e5e5e5;
+	cursor: pointer;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+}
+
+.todos li::before {
+	content: '[ ] - ';
+}
+
+.todos li.completed::before {
+	content: '[X] - ';
+}
+
+.todos li.completed {
+	color: #b6b6b6;
+	text-decoration: line-through;
+}
+
+small {
+	color: #b5b5b5;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+/* Button */
+
+input[type='button']:hover,
+.btn:hover {
+	filter: brightness(90%);
+	scale: 105%;
+}
+
+input[type='button']:active,
+.btn:active {
+	filter: brightness(70%);
+	scale: 90%;
+}
+
+/*: Footer */
+
+footer {
+	margin: auto;
+}
+
+footer,
+footer a {
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	font-size: 12px;
+}
+
+footer a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: underline;
+}
