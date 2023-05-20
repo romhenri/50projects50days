@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+	box-sizing: border-box;
+
+	--c1: #00875f;
+	--c2: #007352;
+	--c3: #10c672;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	margin: 0;
+}
+
+.title {
+	margin: 30px 0 20px;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 900px;
+	height: 900px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+.container img {
+	object-fit: cover;
+	margin: 10px;
+	height: 200px;
+	width: 200px;
+}
+
+/* Button */
+
+input[type='button']:hover,
+.btn:hover {
+	filter: brightness(90%);
+	scale: 105%;
+}
+
+input[type='button']:active,
+.btn:active {
+	filter: brightness(70%);
+	scale: 90%;
+}
+
+/*: Footer */
+
+footer {
+	margin: auto;
+}
+
+footer,
+footer a {
+	color: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+	transition: 0.3s;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	font-size: 12px;
+}
+
+footer a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: underline;
+}
