@@ -15,35 +15,35 @@
 				theme: {
 					extend: {
 						colors: {
-							clifford: "#000",
+							clifford: '#000',
 						},
 					},
 				},
-			};
+			}
 		</script>
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="style.css" />
 		<title>Movie App</title>
 	</head>
 	<!--: BODY -->
-	<body class="m-0 bg-indigo-950 text-white">
+	<body class="m-0 text-white bg-indigo-950">
 		<header
-			class="flex p-5 bg-indigo-900 justify-between align-center items-center px-10 xl:px-60"
+			class="flex items-center justify-between p-5 px-10 bg-indigo-900 align-center xl:px-60"
 		>
-			<div class="flex gap-12 items-center">
-				<a href="" class="logoname text-lg">MovieHub</a>
+			<div class="flex items-center gap-12">
+				<a href="" class="text-lg logoname">MovieHub</a>
 
 				<ul class="flex gap-4">
-					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+					<li class="p-2 transition-all rounded hover:bg-indigo-950">
 						<button>Action</button>
 					</li>
-					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+					<li class="p-2 transition-all rounded hover:bg-indigo-950">
 						<button>Adventure</button>
 					</li>
-					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+					<li class="p-2 transition-all rounded hover:bg-indigo-950">
 						<button>Animation</button>
 					</li>
-					<li class="rounded transition-all p-2 hover:bg-indigo-950">
+					<li class="p-2 transition-all rounded hover:bg-indigo-950">
 						<button>Superheroes</button>
 					</li>
 				</ul>
@@ -54,7 +54,7 @@
 					type="text"
 					id="search"
 					placeholder="search..."
-					class="rounded bg-transparent border-al px-2 py-1 outline-white outline-0"
+					class="px-2 py-1 bg-transparent rounded border-al outline-white outline-0"
 				/>
 				<button
 					class="border-[0.5px] rounded p-[4px] border-al hover:bg-indigo-700"
@@ -71,24 +71,20 @@
 			class="main flex p-4 flex-wrap justify-center gap-5 lg:max-w-[76%] mx-auto border-indigo-900 border-[0.5px] pt-10"
 		>
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -99,24 +95,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -127,24 +119,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -155,24 +143,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -183,24 +167,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -211,24 +191,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -239,24 +215,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -267,24 +239,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -295,24 +263,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -323,24 +287,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -351,24 +311,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -379,24 +335,20 @@
 			</div>
 
 			<div
-				class="movie-loading border-redshadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded movie-loading border-redshadow"
 			>
 				<div class="relative">
-					<div class="loading bg-gray-500"></div>
+					<div class="bg-gray-500 loading"></div>
 				</div>
 
-				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
-				>
+				<div class="flex justify-between px-4 py-3 text-lg shadow">
 					<h3>Loading...</h3>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum
@@ -409,25 +361,25 @@
 			<!-- hover:scale-[1.05] -->
 
 			<!-- <div
-				class="movie border-red w-72 shadow rounded bg-indigo-900 overflow-hidden relative transition-all"
+				class="relative overflow-hidden transition-all bg-indigo-900 rounded shadow movie border-red w-72"
 			>
 				<img src="example.jpg" alt="" class="w-full" />
 
 				<div
-					id="movie-info"
-					class="flex px-4 py-3 justify-between text-lg shadow"
+					  
+					class="flex justify-between px-4 py-3 text-lg shadow"
 				>
 					<h3>Movie Title</h3>
-					<span class="bg-black px-2 rounded bg-black-50 items-center"
+					<span class="items-center px-2 bg-black rounded bg-black-50"
 						>9.8</span
 					>
 				</div>
 
 				<div
-					id="overview"
-					class="overview p-4 bg-white text-black absolute w-72 transition-all"
+					 
+					class="absolute p-4 text-black transition-all bg-white overview w-72"
 				>
-					<h3 class="font-bold pb-1 text-lg">Overview</h3>
+					<h3 class="pb-1 text-lg font-bold">Overview</h3>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Id placeat natus ut maxime numquam nisi. Sapiente eum

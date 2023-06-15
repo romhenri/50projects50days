@@ -2,111 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
 
-
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.overview::-webkit-scrollbar {
+	width: 8px;
+}
+
+.overview::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+.overview::-webkit-scrollbar-thumb {
+	background-color: #312e8180;
+	border-radius: 20px;
 }
 
 .movie {
-  max-width: 208px;
+	max-width: 208px;
 }
 
 .overview {
-  bottom: -220px;
-  transition: all .3s ease-out;
-  max-height: 200px;
-  max-width: 100%;
-  text-justify: distribute;
-  overflow: auto;
+	bottom: -220px;
+	transition: all 0.3s ease-out;
+	max-height: 200px;
+	max-width: 100%;
+	text-justify: distribute;
+	overflow: auto;
 }
 
 .movie:hover .overview {
-  bottom: 0;
-  transition-duration: 900ms;
+	bottom: 0;
+	transition-duration: 900ms;
 }
 
-
 main {
-  border-top: none;
-  border-bottom: none;
+	border-top: none;
+	border-bottom: none;
 }
 
 .movie-info {
-  min-height: 80px
+	min-height: 80px;
 }
 
 .txt {
-  max-width: 80px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  display: inline;
-  overflow: hidden !important;
+	max-width: 80px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	display: inline;
+	overflow: hidden !important;
 }
 
 .logoname {
-  font-family: 'McLaren';
-  font-size: 22px;
-  scale: 120%;
+	font-family: 'McLaren';
+	font-size: 22px;
+	scale: 120%;
 }
 
 /*  */
 
 .border-al {
-  border: 1px solid hsla(0, 0%, 100%, 0.500) !important;
+	border: 1px solid hsla(0, 0%, 100%, 0.5) !important;
 }
 
 .outline-0-5 {
-  outline: .1px solid #fff;
+	outline: 0.1px solid #fff;
 }
 
 .bg-black-50 {
-  background-color: hsla(0, 0%, 0%, 0.200) !important;
+	background-color: hsla(0, 0%, 0%, 0.2) !important;
 }
 
 img {
-  z-index: -5 !important;
+	z-index: -5 !important;
 }
 
 .loading {
-  width: 208px;
-  height: 312px;
-  top: 0;
+	width: 208px;
+	height: 312px;
+	top: 0;
 }
 
 .loading-icon {
-
-  top: 0;
-  z-index: 5;
+	top: 0;
+	z-index: 5;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width: 900px) {
+	ul,
+	li {
+		display: none;
+	}
 
-  ul, li {
-    display: none;
-  }
-
-
-  input {
-    max-width: 120px;
-  }
+	input {
+		max-width: 120px;
+	}
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
+	ul,
+	li {
+		display: none;
+	}
 
-  ul, li {
-    display: none;
-  }
+	input {
+		max-width: 100px;
+	}
 
-
-  input {
-    max-width: 100px;
-  }
-
-  .movie {
-    max-width: 160px;
-  }
+	.movie {
+		max-width: 160px;
+	}
 }
