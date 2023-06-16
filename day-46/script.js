@@ -24,6 +24,14 @@ const quizData = [
 		correct: 'a',
 	},
 	{
+		question: 'What does the term "API" stand for in web development?',
+		a: 'Application Programming Interface',
+		b: 'Advanced Programming Interface',
+		c: 'Automated Program Integration',
+		d: 'Application Process Improvement',
+		correct: 'a',
+	},
+	{
 		question: 'What year was JavaScript launched?',
 		a: '1996',
 		b: '1995',
