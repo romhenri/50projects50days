@@ -1,0 +1,86 @@
+const quizData = [
+	{
+		question: 'Which language runs in a web browser?',
+		a: 'Java',
+		b: 'C',
+		c: 'Python',
+		d: 'JavaScript',
+		correct: 'd',
+	},
+	{
+		question: 'What does CSS stand for?',
+		a: 'Central Style Sheets',
+		b: 'Cascading Style Sheets',
+		c: 'Cascading Simple Sheets',
+		d: 'Cars SUVs Sailboats',
+		correct: 'b',
+	},
+	{
+		question: 'What does HTML stand for?',
+		a: 'Hypertext Markup Language',
+		b: 'Hypertext Markdown Language',
+		c: 'Hyperloop Machine Language',
+		d: 'Helicopters Terminals Motorboats Lamborginis',
+		correct: 'a',
+	},
+	{
+		question: 'What does the term "API" stand for in web development?',
+		a: 'Application Programming Interface',
+		b: 'Advanced Programming Interface',
+		c: 'Automated Program Integration',
+		d: 'Application Process Improvement',
+		correct: 'a',
+	},
+	{
+		question: 'What year was JavaScript launched?',
+		a: '1996',
+		b: '1995',
+		c: '1994',
+		d: 'none of the above',
+		correct: 'b',
+	},
+	{
+		question: 'What does the term "HTTP" stand for in web development?',
+		a: 'Hypertext Transfer Protocol',
+		b: 'Hyperlink Text Transport',
+		c: 'Hypermedia Transfer Process',
+		d: 'Hypertext Tracking Protocol',
+		correct: 'a',
+	},
+	{
+		question:
+			'Which of the following is NOT a commonly used web development framework?',
+		a: 'React',
+		b: 'Django',
+		c: 'Angular',
+		d: 'MySQL',
+		correct: 'd',
+	},
+	{
+		question:
+			'Which HTTP method is used to retrieve data from a server in a web application?',
+		a: 'GET',
+		b: 'POST',
+		c: 'PUT',
+		d: 'DELETE',
+		correct: 'a',
+	},
+	{
+		question:
+			'Which HTTP status code indicates a successful request in web development?',
+		a: '200',
+		b: '404',
+		c: '500',
+		d: '302',
+		correct: 'a',
+	},
+	{
+		question:
+			'Which of the following is NOT a commonly used front-end framework for web development?',
+		a: 'React',
+		b: 'Angular',
+		c: 'Django',
+		d: 'Vue.js',
+		correct: 'c',
+	},
+]
