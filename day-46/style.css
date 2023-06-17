@@ -30,7 +30,7 @@ body {
 }
 
 .quiz-header {
-	padding: 4rem;
+	padding: 30px 50px 10px 50px;
 }
 
 h2 {
@@ -122,6 +122,13 @@ input[type='button']:active,
 .btn:active {
 	filter: brightness(70%);
 	scale: 90%;
+}
+
+#steps {
+	width: 100%;
+	text-align: center;
+	opacity: 0.6;
+	padding-bottom: 20px;
 }
 
 /*: Footer */
