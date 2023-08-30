@@ -13,8 +13,15 @@ btnAdd.addEventListener("click", () => addNewNote());
 function addNewNote(text = "") {
 	const note = document.createElement("div");
 	note.classList.add("note");
+	note.classList.add("editMode")
 
-	note.innerHTML = `<div class="tools">
+	note.innerHTML = `
+		<div class="header">
+			<div class="label">
+			 	Modo de Edição:
+			</div>
+
+			<div class="tools">
 				<button class="edit">
 					<i class="fas fa-edit"></i>
 				</button>
@@ -22,9 +29,10 @@ function addNewNote(text = "") {
 					<i class="fas fa-trash-alt"></i>
 				</button>
 			</div>
+		</div>
 
-			<div class="main ${text ? "" : "hidden"}"></div>
-			<textarea class="${text ? "hidden" : ""}" id=""></textarea>`;
+		<div class="main ${text ? "" : "hidden"}"></div>
+		<textarea class="${text ? "hidden" : ""}" id=""></textarea>`;
 
 	const btnEdit = note.querySelector(".edit");
 	const btnDelete = note.querySelector(".delete");
@@ -38,6 +46,7 @@ function addNewNote(text = "") {
 	btnEdit.addEventListener("click", () => {
 		main.classList.toggle("hidden");
 		textarea.classList.toggle("hidden");
+		note.classList.toggle("editMode")
 	});
 
 	btnDelete.addEventListener("click", () => {

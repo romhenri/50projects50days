@@ -55,21 +55,37 @@ main {
 
   margin: 30px 20px;
   width: 400px;
-  height: 400px;
+  height: 300px;
   border-radius: 10px;
 }
 
-.note .tools {
+.label {
+  padding: 0px 15px;
+  opacity: 0;
+}
+
+.editMode .label {
+  opacity: 100;
+  transform: translateY(+3px);
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.note .header {
   background-color: var(--c1);
 
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   padding: 0.5rem;
   border-radius: 10px 10px 0 0;
 }
 
-.note .tools button {
+.note .header button {
   background-color: transparent;
   color: #fff;
   border: none;
@@ -82,10 +98,10 @@ main {
   outline: none;
   border: 2px solid var(--c1);
 
-  font-size: 1.2rem;
-  height: 400px;
-  min-height: 400px;
-  max-height: 400px;
+  font-size: 1rem;
+  height: 300px;
+  min-height: 300px;
+  max-height: 300px;
   width: 100%;
   max-width: 100%;
   min-width: 100%;
@@ -94,11 +110,15 @@ main {
 
 .main {
   padding: 20px;
-  height: 400px;
+  height: 300px;
   border-radius: 10px 10px 0 0;
 }
 
 /* Button */
+
+main button:hover {
+  scale: 120%;
+}
 
 input[type=button]:hover, .btn:hover, button:hover {
   filter: brightness(90%);
