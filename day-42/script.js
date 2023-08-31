@@ -7,17 +7,14 @@ getData(32)
 
 filter.addEventListener('input', (e) => filterData(e.target.value))
 inputSize.addEventListener('input', (e) => {
-	// console.log(e.target.value);
-	getData(e.target.value)
+	getData(e.target.value);
+	filterData(filter.value)
 })
 
 async function getData(size) {
 	const res = await fetch('https://randomuser.me/api?results=' + size)
 
 	const { results } = await res.json()
-	// console.log(results)
-
-	// Clear results
 	result.innerHTML = ''
 
 	results.forEach((user) => {
