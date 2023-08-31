@@ -127,6 +127,10 @@ main {
   border-radius: 10px 10px 0 0;
 }
 
+.main p {
+  word-wrap:  break-word;
+}
+
 /* Button */
 
 main button:hover {

@@ -2,16 +2,23 @@ const btnAdd = document.getElementById("add");
 
 const notes = JSON.parse(localStorage.getItem("notes"));
 const notesDates = JSON.parse(localStorage.getItem("notesDates"));
+const notesSize = notes.length;
 
 if (notes) {
+	let index = 0
 	notes.forEach((note) => {
-		addNewNote(note, true);
+		const date = notesDates[index]
+		addNewNote(note, date, true);
+		index += 1
 	});
 }
 
-btnAdd.addEventListener("click", () => addNewNote());
+btnAdd.addEventListener("click", () => {
+	const date = getDateFormatted()
+	addNewNote('', date)
+});
 
-function addNewNote(text = "", isLoad) {
+function addNewNote(text = "", date, isLoad) {
 	const note = document.createElement("div");
 	note.classList.add("note");
 
@@ -24,17 +31,6 @@ function addNewNote(text = "", isLoad) {
 		mangle: false,
 		headerIds: false
 	});
-
-	function getDateFormatted() {
-		var date = new Date();
-		var day = String(date.getDate()).padStart(2, '0');
-		var month = String(date.getMonth() + 1).padStart(2, '0');
-		var year = date.getFullYear();
-		var dateFormatted = day + '/' + month + '/' + year;
-		console.log(dateFormatted);
-		
-		return dateFormatted
-	}
 
 	note.innerHTML = `
 		<div class="header">
@@ -57,7 +53,7 @@ function addNewNote(text = "", isLoad) {
 		
 
 		<div class="info">
-			...
+			Última edição: <span class="date">${date}</span> 
 		</div>
 		`;
 
@@ -75,7 +71,12 @@ function addNewNote(text = "", isLoad) {
 		textarea.classList.toggle("hidden");
 		note.classList.toggle("editMode")
 
-		note.querySelector(".info").innerHTML = `Última edição: ${getDateFormatted()}`
+		note.querySelector(".info").innerHTML = `
+		Última edição: 
+		<span class="date">
+			${getDateFormatted()}
+		</span>
+		`
 	});
 
 	btnDelete.addEventListener("click", () => {
@@ -95,12 +96,26 @@ function addNewNote(text = "", isLoad) {
 }
 
 function updateLS() {
+	// LS == LocalStorage
 	const notesText = document.querySelectorAll("textarea");
+	const datesText = document.querySelectorAll(".date");
 
 	const notes = [];
+	const notesDates = [];
 
 	notesText.forEach((note) => notes.push(note.value));
-	console.log(notes);
+	datesText.forEach((date) => notesDates.push(date.outerText));
 
 	localStorage.setItem("notes", JSON.stringify(notes));
+	localStorage.setItem("notesDates", JSON.stringify(notesDates));
+}
+
+function getDateFormatted() {
+	var date = new Date();
+	var day = String(date.getDate()).padStart(2, '0');
+	var month = String(date.getMonth() + 1).padStart(2, '0');
+	var year = date.getFullYear();
+	var dateFormatted = day + '/' + month + '/' + year;
+	
+	return dateFormatted
 }
