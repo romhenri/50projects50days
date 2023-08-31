@@ -1,19 +1,29 @@
 const btnAdd = document.getElementById("add");
 
 const notes = JSON.parse(localStorage.getItem("notes"));
+const notesDates = JSON.parse(localStorage.getItem("notesDates"));
 
 if (notes) {
 	notes.forEach((note) => {
-		addNewNote(note);
+		addNewNote(note, true);
 	});
 }
 
 btnAdd.addEventListener("click", () => addNewNote());
 
-function addNewNote(text = "") {
+function addNewNote(text = "", isLoad) {
 	const note = document.createElement("div");
 	note.classList.add("note");
-	note.classList.add("editMode")
+
+	if (!isLoad) {
+		note.classList.add("editMode")
+	}
+
+	marked.use({
+		langPrefix: '',
+		mangle: false,
+		headerIds: false
+	});
 
 	function getDateFormatted() {
 		var date = new Date();
@@ -82,7 +92,6 @@ function addNewNote(text = "") {
 	});
 
 	body.appendChild(note);
-	console.log(getDateFormatted());
 }
 
 function updateLS() {
