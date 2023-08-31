@@ -57,6 +57,7 @@ main {
   width: 400px;
   height: 300px;
   border-radius: 10px;
+  position: relative;
 }
 
 .label {
@@ -69,6 +70,10 @@ main {
   transform: translateY(+3px);
 }
 
+.editMode .info {
+  display: none;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -76,11 +81,19 @@ main {
   color: #fff;
 }
 
+.info {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  color: hsla(0, 0%, 0%, 0.50);
+  font-size: 0.8rem;
+}
+
 .note .header {
   background-color: var(--c1);
 
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   padding: 0.5rem;
   border-radius: 10px 10px 0 0;
 }

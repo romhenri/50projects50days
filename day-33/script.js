@@ -15,6 +15,17 @@ function addNewNote(text = "") {
 	note.classList.add("note");
 	note.classList.add("editMode")
 
+	function getDateFormatted() {
+		var date = new Date();
+		var day = String(date.getDate()).padStart(2, '0');
+		var month = String(date.getMonth() + 1).padStart(2, '0');
+		var year = date.getFullYear();
+		var dateFormatted = day + '/' + month + '/' + year;
+		console.log(dateFormatted);
+		
+		return dateFormatted
+	}
+
 	note.innerHTML = `
 		<div class="header">
 			<div class="label">
@@ -32,7 +43,13 @@ function addNewNote(text = "") {
 		</div>
 
 		<div class="main ${text ? "" : "hidden"}"></div>
-		<textarea class="${text ? "hidden" : ""}" id=""></textarea>`;
+		<textarea class="${text ? "hidden" : ""}" id=""></textarea>
+		
+
+		<div class="info">
+			...
+		</div>
+		`;
 
 	const btnEdit = note.querySelector(".edit");
 	const btnDelete = note.querySelector(".delete");
@@ -47,6 +64,8 @@ function addNewNote(text = "") {
 		main.classList.toggle("hidden");
 		textarea.classList.toggle("hidden");
 		note.classList.toggle("editMode")
+
+		note.querySelector(".info").innerHTML = `Última edição: ${getDateFormatted()}`
 	});
 
 	btnDelete.addEventListener("click", () => {
@@ -63,6 +82,7 @@ function addNewNote(text = "") {
 	});
 
 	body.appendChild(note);
+	console.log(getDateFormatted());
 }
 
 function updateLS() {
