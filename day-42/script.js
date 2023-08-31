@@ -1,16 +1,21 @@
 const result = document.getElementById('result')
 const filter = document.getElementById('filter')
+const inputSize = document.getElementById('size')
 const listItems = []
 
-getData()
+getData(32)
 
 filter.addEventListener('input', (e) => filterData(e.target.value))
+inputSize.addEventListener('input', (e) => {
+	// console.log(e.target.value);
+	getData(e.target.value)
+})
 
-async function getData() {
-	const res = await fetch('https://randomuser.me/api?results=40')
+async function getData(size) {
+	const res = await fetch('https://randomuser.me/api?results=' + size)
 
 	const { results } = await res.json()
-	console.log(results)
+	// console.log(results)
 
 	// Clear results
 	result.innerHTML = ''
@@ -33,7 +38,7 @@ async function getData() {
 }
 
 function filterData(searchTerm) {
-	console.log(searchTerm)
+	// console.log(searchTerm)
 
 	listItems.forEach((item) => {
 		if (item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
