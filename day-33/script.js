@@ -2,9 +2,8 @@ const btnAdd = document.getElementById("add");
 
 const notes = JSON.parse(localStorage.getItem("notes"));
 const notesDates = JSON.parse(localStorage.getItem("notesDates"));
-const notesSize = notes.length;
 
-if (notes) {
+if (notes && notesDates) {
 	let index = 0
 	notes.forEach((note) => {
 		const date = notesDates[index]
