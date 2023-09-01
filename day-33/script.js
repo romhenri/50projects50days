@@ -1,3 +1,5 @@
+import { getDateFormatted } from "./getDateFormatted.js";
+
 const btnAdd = document.getElementById("add");
 
 const notes = JSON.parse(localStorage.getItem("notes"));
@@ -107,14 +109,4 @@ function updateLS() {
 
 	localStorage.setItem("notes", JSON.stringify(notes));
 	localStorage.setItem("notesDates", JSON.stringify(notesDates));
-}
-
-function getDateFormatted() {
-	var date = new Date();
-	var day = String(date.getDate()).padStart(2, '0');
-	var month = String(date.getMonth() + 1).padStart(2, '0');
-	var year = date.getFullYear();
-	var dateFormatted = day + '/' + month + '/' + year;
-	
-	return dateFormatted
 }
