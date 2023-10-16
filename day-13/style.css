@@ -1,5 +1,7 @@
 * {
 	margin: 0px;
+	font-family: "Montserrat";
+	--c1: #00875F; 
 }
 
 body {
@@ -20,7 +22,7 @@ section {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	margin: auto;
+	margin: 0px auto;
 	flex-direction: column;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 	background-color: #fff;
@@ -29,33 +31,87 @@ section {
 	width: 600px;
 	flex-wrap: wrap;
 	overflow: hidden;
+}
 
+h1 {
+	margin-bottom: 10px;
 }
 
 p {
-	margin: 10px 0 20px;
+	margin: 20px 10px;
 }
 
 textarea {
 	display: block;
-	width: 100%;
+	width: 95%;
 	height: 100px;
 	font-family: inherit;
 	padding: 10px;
 	margin: 0 0 20px;
-	font-size: 16px
+	font-size: 16px;
+	resize: vertical;
+	border-radius: 10px;
+}
+
+#tags {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin: 20px 10px;
+	flex-wrap: wrap;
 }
 
 .tag {
-	background-color: var(--c1);
-	color: #fff;
-	border-radius: 50px;
+	background-color: #fafafa;
+	color: #1f1f1f;
+	border-radius: 10px;
 	padding: 10px 20px;
 	display: inline-block;
+	border: 2px solid #00875F;
+}
+
+.buttonsLine {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	justify-content: space-around;
+}
+
+button {
+	background-color: var(--c1);
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px 20px;
+	display: inline-block;
+	border: none;
+	flex-grow: 1;
+	font-weight: 500;
+}
+
+button:hover {
+	transition: .3s;
+	filter: brightness(95%);
+}
+button:active {
+	transition: .2s;
+	filter: brightness(95%);
+	scale: .97;
+}
+
+
+button.alternative {
+	background-color: #e6e6e6 !important;
+	color: #1f1f1f;
 }
 
 .tag.highlight {
-	background-color: rgb(0, 70, 29);
+	background-color: rgba(50, 163, 84, 0.1);
+}
+
+footer {
+	margin-top: 20px;
+	font-size: .7em;
+	color: #1f1f1fcc;
 }
 
 @media screen and (max-width:600px) {

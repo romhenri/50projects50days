@@ -11,30 +11,51 @@
 			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="../base/ddt-50days.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<section id="insert" class="container">
 			<h1>Random Choice Picker</h1>
+			<hr>
 			<p>
-				Enter all of the choices divided by a comma (',')
+				Enter all of the choices divided by a comma ","
 				<br />
 				Press Enter where you're done
 			</p>
-			<textarea
-				placeholder="Enter choices here..."
-				name="Choices"
-				id="textarea"
-				cols="30"
-				rows="10"
-			></textarea>
+			<hr>
 			<div id="tags">
 				<span class="tag">Choice 1</span>
 				<span class="tag">Choice 2</span>
 				<span class="tag">Choice 3</span>
 			</div>
+
+			<textarea
+				placeholder="Enter choices here..."
+				name="Choices"
+				id="textarea"
+				value=""
+			>
+			</textarea>
+
+			<div class="buttonsLine">
+				<button id="clear" class="alternative">Clear</button>
+				<button id="choose" >Choose</button>
+			</div>
 		</section>
+
+		<footer>
+			<a href="https://www.linkedin.com/in/romulo-henri/" target="_blank" rel="noopener noreferrer">
+				Desenvolvido por Rômulo Henri (2023)
+			</a>
+			|
+			<a href="https://github.com/romhenri/50projects50days" target="_blank" rel="noopener noreferrer">
+				50projects50days
+			</a>
+		</footer>
+
 		<script src="script.js"></script>
 	</body>
 </html>

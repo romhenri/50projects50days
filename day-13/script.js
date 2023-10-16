@@ -1,7 +1,23 @@
 const tagsElmt = document.getElementById("tags");
 const textarea = document.getElementById("textarea");
 
-textarea.focus();
+textarea.value = ''
+
+const btnClear = document.querySelector("#clear")
+const btnChoose = document.querySelector("#choose")
+
+btnClear.addEventListener("click", () => {
+	textarea.value = ''
+	tagsElmt.innerHTML = ''
+})
+
+btnChoose.addEventListener("click", () => {
+	setTimeout(() => {
+		textarea.value = "";
+	}, 10);
+
+	randomSelect();
+})
 
 textarea.addEventListener("keyup", (e) => {
 	createTags(e.target.value);
@@ -20,7 +36,7 @@ function createTags(input) {
 		.split(",")
 		.filter((tag) => tag.trim() !== "")
 		.map((tag) => tag.trim());
-	console.log(tags);
+	// console.log(tags);
 
 	tagsElmt.innerHTML = "";
 
