@@ -80,12 +80,15 @@ body {
 	margin: 10px 0;
 }
 
-.progress-bar {
+.progress-bar .progress {
 	background-color: #fff;
 	height: 4px;
 	width: 100%;
-	animation: grow 10s linear infinite;
 	transform-origin: left;
+}
+
+.loading {
+	animation: grow 10s linear;
 }
 
 @keyframes grow {

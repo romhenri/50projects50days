@@ -1,24 +1,29 @@
-const testimonialsContainer = document.querySelector('.testimonials-container')
-const testimonial = document.querySelector('.testimonial')
-const userImage = document.querySelector('.user-image')
-const username = document.querySelector('.username')
-const role = document.querySelector('.role')
+const testimonialsBox = document.querySelector('.testimonial-container');
+const testimonial = testimonialsBox.querySelector('.testimonial');
+const userImage = testimonialsBox.querySelector('.user-image');
+const username = testimonialsBox.querySelector('.username');
+const role = testimonialsBox.querySelector('.role');
+const progressBar = testimonialsBox.querySelector('.progress-bar');
 
-let idx = 1
+let idx = 1;
 
 function updateTestimonial() {
-	const { name, position, photo, text } = testimonials[idx]
+	const { name, position, photo, text } = testimonials[idx];
 
-	testimonial.innerHTML = text
-	userImage.src = photo
-	username.innerHTML = name
-	role.innerHTML = position
+	testimonial.innerHTML = text;
+	userImage.src = photo;
+	username.innerHTML = name;
+	role.innerHTML = position;
 
-	idx++
+	progressBar.innerHTML = `
+	<div class="progress loading"></div>
+	`;
 
+	idx++;
 	if (idx > testimonials.length - 1) {
-		idx = 0
+		idx = 0;
 	}
 }
 
+updateTestimonial();
 setInterval(updateTestimonial, 9990);
