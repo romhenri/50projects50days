@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+*.html linguist-detect-weight=0.5
+*.js linguist-detect-weight=1.5
+*.css linguist-detect-weight=0.4

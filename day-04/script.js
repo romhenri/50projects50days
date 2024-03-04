@@ -3,6 +3,6 @@ const btn = document.querySelector(".btn");
 const input = document.querySelector(".input");
 
 btn.addEventListener("click", () => {
-	inputc.classList.toggle("hidden");
+	input.classList.toggle("hidden");
 	input.focus();
 });

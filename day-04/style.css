@@ -5,7 +5,21 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  overflow-y: hidden;
   min-height: 100vh;
+  background-color: rgb(245, 245, 245);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  padding: 80px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 input[type=text] {
